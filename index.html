@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover luxury perfumes and attars at SIDRAH.">
+  <title>SIDRAH | Luxury Fragrances</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, serif;
+      background: #faf8f3;
+      color: #28251f;
+    }
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e8e1d5;
+    }
+    .logo { font-size: 30px; letter-spacing: 7px; }
+    nav a {
+      color: #28251f;
+      text-decoration: none;
+      margin-left: 24px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+    .hero {
+      min-height: 570px;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, #eee6d9, #faf8f3);
+    }
+    .hero-content { max-width: 520px; }
+    .eyebrow {
+      letter-spacing: 4px;
+      font: 12px Arial, sans-serif;
+      color: #9a7846;
+    }
+    h1 { font-size: clamp(45px, 7vw, 76px); margin: 24px 0; }
+    .hero p { font: 16px/1.8 Arial, sans-serif; color: #71695e; }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 16px 30px;
+      background: #29271f;
+      color: white;
+      text-decoration: none;
+      font: 12px Arial, sans-serif;
+      letter-spacing: 2px;
+    }
+    .section { padding: 75px 7%; text-align: center; }
+    .section h2 { font-size: 38px; margin-bottom: 14px; }
+    .section p { color: #777; font: 14px Arial, sans-serif; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+      text-align: left;
+    }
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      background: #eee7dc;
+    }
+    .product h3 { margin-top: 15px; font-size: 21px; }
+    .product p { margin-top: 8px; }
+    footer {
+      padding: 35px;
+      background: #29271f;
+      color: white;
+      text-align: center;
+      font: 13px Arial, sans-serif;
+    }
+    @media(max-width:650px) {
+      nav a { margin-left: 10px; font-size: 11px; }
+      .logo { font-size: 22px; letter-spacing: 4px; }
+      .hero { min-height: 450px; }
+      .products { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SIDRAH</div>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#shop">SHOP</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">THE ART OF FINE FRAGRANCE</div>
+        <h1>Discover Your Signature Scent.</h1>
+        <p>Experience the elegance of luxury perfumes and timeless Arabian fragrances.</p>
+        <a class="btn" href="#shop">EXPLORE COLLECTION</a>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <h2>Our Collection</h2>
+      <p>Find a fragrance that tells your story.</p>
+      <div class="products">
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600" alt="Luxury perfume">
+          <h3>Signature Perfumes</h3>
+          <p>Discover your everyday luxury.</p>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600" alt="Premium fragrance">
+          <h3>Premium Fragrances</h3>
+          <p>Elegance in every drop.</p>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600" alt="Perfume bottle">
+          <h3>Arabian Collection</h3>
+          <p>Inspired by timeless traditions.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>SIDRAH</h2>
+    <p>Luxury in Every Drop.</p>
+    <p>© 2026 SIDRAH. All rights reserved.</p>
+  </footer>
+</body>
+</html>
